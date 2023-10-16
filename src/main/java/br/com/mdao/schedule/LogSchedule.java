@@ -13,12 +13,12 @@ public class LogSchedule {
     //Roda a cada 5min
     @Scheduled(cron="0 0/5 * * * *")
     public void logScheduleMinute() {
-        log.info("STARTED AT MINUTE" + LocalTime.now());
+        log.info("STARTED AT MINUTE: " + LocalTime.now());
     }
 
     //Roda às 15:00
     @Scheduled(cron="0 0 15 * * *")
     public void logScheduleHour(){
-        log.info("STARTED AT HOUR" + LocalTime.now());
+        log.info("STARTED AT HOUR: " + LocalTime.now());
     }
 }
